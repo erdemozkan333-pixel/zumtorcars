@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-apex-bg: #0A0A0A;
+  --color-apex-surface: #111111;
+  --color-apex-surface-light: #181818;
+  --color-apex-accent: #FF5500;
+  --color-apex-accent-cyan: #FF6B00;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-apex-bg text-gray-200 antialiased selection:bg-apex-accent-cyan selection:text-black;
+  }
+}
